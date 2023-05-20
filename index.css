@@ -63,14 +63,16 @@ body{
     position: fixed;
     width: 100%;
     top:0%;
-    background: linear-gradient(rgba(71, 1, 1, 1),rgb(89, 4, 4,0));
+    background: linear-gradient(rgba(71, 1, 1, .9),rgb(89, 4, 4,.1));
     margin-top: 15px solid rgba(71, 1, 1);
-    transition-property:all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
+    
+    transition: all 0.4s ease-in-out;
 
 }
 
+.header{
+    transition: all 0.3s ease-in-out;
+}
 
 /* logo  */
 
@@ -81,6 +83,7 @@ body{
     align-items: center;
     font-size: 2.5rem;
     color: rgb(89, 4, 4);
+    transition: color 0.3s ease-in-out;
     
 }
 
@@ -128,6 +131,7 @@ body{
     font-size: 1.2rem;
     border-radius: 5px;
     margin-left: .5rem;
+    transition: all 0.5s ease-in-out;
 }
 
 .search label:hover{
