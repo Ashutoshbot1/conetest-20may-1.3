@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+/* ######################### Group ############# */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+h3{
+    font-size: 2rem;
+
+}
+body{
+    background-color: #f4f3f0;
+    
+}
+
+
+/* ########## utility ######## */
+
+.color-brown{
+    color: rgb(89, 4, 4);
+}
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+
+
+/* ################# navbar############### */
+
+.navbar{
+    /* border:2px solid; */
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 5rem;
+    height: 65px;
+    font-size: 1.7rem;
+    position: fixed;
+    width: 100%;
+    top:0%;
+    background: linear-gradient(rgba(71, 1, 1, 1),rgb(89, 4, 4,0));
+    margin-top: 15px solid rgba(71, 1, 1);
+    transition-property:all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+/* logo  */
+
+.navbar .logo{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: rgb(89, 4, 4);
+    
+}
+
+/* ul  */
+
+.menu-items{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 .5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-items a{
+    transition: all 0.5s ease-in-out;
+}
+
+/* li  */
+
+.menu-item{
+    /* border: 2px solid blue; */
+    margin-right: 2.2rem;
+    color: rgb(89, 4, 4);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-items a:hover{
+    opacity: .7;
+}
+
+.search{
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+.search label{
+    background-color:rgb(89, 4, 4);
+    height: 100%;
+    color: #f4f3f0;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-left: .5rem;
+}
+
+.search label:hover{
+    cursor: pointer;
+}
+
+.search input{
+    display: block;
+    height: 2rem;
+    width: 110%;
+}
+
+
+
+header.scrolled .navbar{
+    background:linear-gradient(rgb(89, 4, 4),rgb(89, 4, 4));
+    
+    /* color: white; */
+    transition-property:all;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+header.scrolled .navbar .logo,
+header.scrolled .navbar li{
+    color: #f4f3f0;
+}
+
+header.scrolled .navbar .search label{
+    background-color:#f4f3f0 ;
+    color: rgb(89, 4, 4);
+    font-weight: 700;
+}
+
+
+
+/* ###########  book section ############ */
+
+
+.book-section{
+    font-size:1.5rem;
+    margin-top: 15rem;
+    transition-property:all;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* .outer-table */
+
+.outer-table{
+    margin: auto;
+    text-align: center;
+    color: brown;
+    border-color: rgb(89, 4, 4);;
+
+}
+th{
+    font-weight: 700;
+}
+
+td,th{
+    padding:  1rem;
+}
+
+
+/* in-tab  */
+
+.in-tab{
+    width:70%;
+    text-align: start;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.in-tab h3{
+
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    border-bottom: 2px solid;
+    color: rgb(89, 4, 4);
+    
+}
+
+.in-tab h3:hover{
+
+    border:none;
+    font-weight: 400;
+
+}
+
+.inner-table{
+    color: rgb(124, 23, 23);
+    border: none;
+    width:90%;
+}
+
+.inner-table td{
+    border-top: none;
+    border-left: 3px solid;
+    border-bottom: .1px solid;
+    /* border-right: none; */
+    /* border-right: 1px solid; */
+}
+
+.inner-table tr{
+    margin-bottom: .3rem;
+    /* border: 2px solid red; */
+}
+
+
+
+
+/* ############### form ############# */
+
+.form{
+    /* border: 2px solid; */
+    font-size: 1.5rem;
+    margin-top: 10rem;
+
+}
+
+form{
+    /* border:2px solid; */
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+form h3{
+    color: rgb(89, 4, 4);
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    width: 90%;
+}
+
+.form input{
+    display: block;
+}
+
+form input{
+    margin-bottom: 1rem;
+    height: 40px;
+    width: 90%;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-width:1px;
+    border-color: rgba(124, 23, 23, 0.734);
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: rgb(89, 4, 4);
+    
+    
+}
+
+
+
+::placeholder,
+input[type="date"]{
+ /* border: 2px solid; */
+ padding-left: 1rem;
+ /* margin-bottom: .2rem; */
+ font-size: 1.5rem;
+ color: rgba(124, 23, 23, 0.734);
+}
+
+input[type="date"]{
+    text-transform: uppercase;
+    padding-left: 3rem;
+}
+
+input[type="text"]:focus{
+    border: none;
+}
+
+
+
+
+/* button */
+
+.btn{
+    /* border:2px solid; */
+    display: inline-block;
+    margin: 2rem;
+
+    padding: 1rem 2.5rem;
+    background-color:rgb(89, 4, 4);
+    color: white;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover{
+    background-color:rgba(124, 23, 23);
+    transform: scale(1.1,1.1);
+}
+
+input:focus{
+    /* border: none; */
+    /* border: none; */
+
+    border-color: rgb(89, 4, 4);;
+}
+
+
+
+
+
+
+
+
+
